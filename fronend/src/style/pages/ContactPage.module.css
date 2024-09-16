@@ -1,0 +1,87 @@
+.contactContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .contactTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup label {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .formGroup input:focus,
+  .formGroup textarea:focus {
+    border-color: #008cba;
+    outline: none;
+  }
+  
+  .submitButton {
+    padding: 14px 24px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #006f98;
+  }
+  .statusMessage{
+    color: #008cba;
+    margin-top: 25px;
+  }
+  
+  @media (max-width: 600px) {
+    .contactContainer {
+      padding: 20px;
+    }
+  
+    .contactTitle {
+      font-size: 2rem;
+    }
+  
+    .formGroup input,
+    .formGroup textarea {
+      font-size: 0.9rem;
+    }
+  
+    .submitButton {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,43 @@
+.btn_box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .back_btn, .delete_btn {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  .back_btn {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); 
+  }
+  
+  .back_btn:hover {
+    background: linear-gradient(45deg, #0056b3, #003d7a);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+  }
+  
+  
+  
+  .delete_btn {
+    background: linear-gradient(45deg, #dc3545, #c82333);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.2);
+  }
+  
+  .delete_btn:hover {
+    background: linear-gradient(45deg, #c82333, #a71d2a);
+    box-shadow: 0 6px 12px rgba(220, 53, 69, 0.3);
+  }

@@ -1,0 +1,31 @@
+/* src/style/components/DeleteUserButton.module.css */
+
+.deleteButton {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c9302c;
+  }
+  
+  .deleteButton:active {
+    background-color: #ac2925;
+    transform: scale(0.98);
+  }
+  
+  .deleteButton:focus {
+    outline: none;
+  }
+  
+  .deleteButton:disabled {
+    background-color: #f7b2af;
+    cursor: not-allowed;
+  }
+  
