@@ -1,31 +1,45 @@
-/* src/style/components/DeleteUserButton.module.css */
-
 .deleteButton {
-    background-color: #d9534f;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  max-width: 100%; /* Ensure button doesn't overflow */
+}
+
+.deleteButton:hover {
+  background-color: #c9302c;
+}
+
+.deleteButton:active {
+  background-color: #ac2925;
+  transform: scale(0.98);
+}
+
+.deleteButton:focus {
+  outline: none;
+}
+
+.deleteButton:disabled {
+  background-color: #f7b2af;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .deleteButton {
+      padding: 8px 16px;
+      font-size: 0.9rem;
   }
-  
-  .deleteButton:hover {
-    background-color: #c9302c;
+}
+
+@media (max-width: 480px) {
+  .deleteButton {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      width: 100%; /* Full width on small screens */
+      border-radius: 4px;
   }
-  
-  .deleteButton:active {
-    background-color: #ac2925;
-    transform: scale(0.98);
-  }
-  
-  .deleteButton:focus {
-    outline: none;
-  }
-  
-  .deleteButton:disabled {
-    background-color: #f7b2af;
-    cursor: not-allowed;
-  }
-  
+}

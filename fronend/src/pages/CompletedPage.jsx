@@ -76,7 +76,7 @@ const CompletedPage = () => {
               ))}
         </div>
       ) : (
-       <h3>No completed task found!</h3> 
+       <h3 className={classes.notFound}>No completed task found!</h3> 
       )}
     </div>
   );

@@ -1,3 +1,4 @@
+/* Desktop view */
 .nav {
   background-color: #333;
   padding: 10px 20px;
@@ -22,7 +23,7 @@
 .navLink {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 26px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -35,4 +36,16 @@
   color: #ff6f61;
   border-bottom: 2px solid #ff6f61;
   padding-bottom: 2px;
+}
+
+/* Mobile view */
+@media screen and (max-width: 590px) {
+  .navList {
+    /* flex-direction: column; */
+    gap: 10px;
+  }
+
+  .navLink {
+    font-size: 20px;
+  }
 }

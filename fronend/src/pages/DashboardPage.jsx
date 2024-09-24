@@ -80,7 +80,7 @@ const DashboardPage = () => {
             <TaskItem key={task._id} task={task} />
           ))
         ) : shouldShowNoTasksMessage ? (
-          <p>No tasks found, click here to create task</p>
+          <p className={classes.noTask}>No tasks found, click here to create task</p>
         ) : null}
       </ul>
     </div>

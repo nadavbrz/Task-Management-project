@@ -1,4 +1,3 @@
-/* General container styling */
 .privacyContainer {
   max-width: 1200px;
   margin: 0 auto;
@@ -8,12 +7,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Privacy content area */
 .privacyContent {
   padding: 20px;
 }
 
-/* Header styling */
 .header {
   font-size: 2.5rem;
   color: #333;
@@ -21,7 +18,6 @@
   text-align: center;
 }
 
-/* Intro paragraph */
 .intro {
   font-size: 1.2rem;
   line-height: 1.6;
@@ -30,26 +26,22 @@
   text-align: justify;
 }
 
-/* Section title styling */
 .subHeader {
   font-size: 1.8rem;
   color: #444;
   margin-bottom: 15px;
 }
 
-/* Section styling */
 .section {
   margin-bottom: 30px;
 }
 
-/* List styling */
 .list {
   margin-left: 20px;
   list-style-type: disc;
   color: #555;
 }
 
-/* Last updated */
 .lastUpdated {
   font-size: 0.9rem;
   color: #777;
@@ -57,7 +49,6 @@
   margin-top: 20px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .privacyContainer {
     padding: 15px;

@@ -21,8 +21,6 @@ const ProfilePage = () => {
   const [imagePreview, setImagePreview] = useState(null);
   const [successMessage, setSuccessMessage] = useState("");
   const [validationMessage, setValidationMessage] = useState("");
-  // const [passwordError, setPasswordError] = useState("");
-  // const [emailError, setEmailError] = useState("");
   const [changesMade, setChangesMade] = useState(false);
 
   useEffect(() => {

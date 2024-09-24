@@ -78,7 +78,7 @@ function TaskItem({ task }) {
               onClick={() => handleStatusChange(key)}
               className={classes.statusBtn}
             >
-              <Icon fill={status[key] ? color : "#B2BEB5"} size="25px" />
+              <Icon fill={status[key] ? color : "#B2BEB5"} size="35px" />
             </button>
             <span className={classes.tooltipText}>{tooltip}</span>
           </div>
@@ -89,7 +89,7 @@ function TaskItem({ task }) {
           onClick={() => dispatch(deleteTask(task._id))}
           className={classes.deleteTaskBtn}
         >
-          <FaRegTrashCan fill="#FF0800" size="27px" />
+          <FaRegTrashCan fill="#FF0800" size="35px" />
         </button>
         <span className={classes.tooltipText}>Delete Task</span>
       </div>

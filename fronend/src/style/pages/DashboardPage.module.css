@@ -1,89 +1,141 @@
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+}
+
+.createTaskBtn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.createTaskBtn:hover {
+  background-color: #45a049;
+}
+
+.createTaskForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.titleInput, 
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.textarea {
+  height: 100px;
+  resize: none;
+}
+
+.titleInput:focus, 
+.textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.addTaskBtn {
+  padding: 10px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addTaskBtn:hover {
+  background-color: #1e88e5;
+}
+
+.error {
+  color: red;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.loading {
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.noTask {
+  font-size: 24px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 95%;
+    padding: 10px;
   }
-  
+
   h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+
+  .createTaskBtn, .addTaskBtn {
+    font-size: 1.5rem;
+  }
+
+  .titleInput, .textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .noTask {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+
+  h1 {
     font-size: 2rem;
   }
-  
-  .createTaskBtn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 20px;
+
+  .createTaskBtn, .addTaskBtn {
+    font-size: 1.3rem;
+    padding: 8px;
   }
-  
-  .createTaskBtn:hover {
-    background-color: #45a049;
+
+  .titleInput, .textarea {
+    padding: 8px;
+    font-size: 0.8rem;
   }
-  
-  .createTaskForm {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+
+  .noTask {
+    font-size: 16px;
   }
-  
-  .titleInput, 
-  .textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-    background-color: #fff;
-  }
-  
-  .textarea {
-    height: 100px;
-    resize: none;
-  }
-  
-  .titleInput:focus, 
-  .textarea:focus {
-    outline: none;
-    border-color: #4caf50;
-  }
-  
-  .addTaskBtn {
-    padding: 10px;
-    background-color: #2196f3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .addTaskBtn:hover {
-    background-color: #1e88e5;
-  }
-  
-  .error {
-    color: red;
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .loading {
-    color: #333;
-    margin-top: 20px;
-    text-align: center;
-  }
-  
+}

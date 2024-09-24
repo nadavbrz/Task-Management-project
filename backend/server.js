@@ -14,7 +14,7 @@ const userRoutes = require("./routes/userRoute")
 const sendEmailRoute = require("./routes/sendEmailRoute")
 
 const corsOptions = {
-    origin: process.env.FRONTEND_URL, 
+    origin:"*", 
     optionsSuccessStatus: 200,
 };
 

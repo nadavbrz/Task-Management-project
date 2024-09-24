@@ -1,95 +1,141 @@
 .taskItem {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    word-break: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  word-break: break-word;
+  flex-wrap: wrap;
+}
+
+.taskItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.taskDetailsBtn {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: auto;
+  transition: color 0.3s ease;
+  text-align: left;
+}
+
+.taskDetailsBtn:hover {
+  color: #0056b3;
+}
+
+.statusIcons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.tooltipContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.statusBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.statusBtn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
+}
+
+.tooltipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%; 
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltipContainer:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.deleteTaskBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.deleteTaskBtn:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .taskItem {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
   }
-  
-  .taskItem:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  }
-  
+
   .taskDetailsBtn {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin-right: auto;
-    transition: color 0.3s ease;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
   }
-  
-  .taskDetailsBtn:hover {
-    color: #0056b3;
-  }
-  
+
   .statusIcons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+      gap: 10px;
   }
-  
-  .tooltipContainer {
-    position: relative;
-    display: inline-block;
-  }
-  
+
   .statusBtn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 50%;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+      padding: 8px;
   }
-  
-  .statusBtn:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-    transform: scale(1.1);
-  }
-  
-  .tooltipText {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%; 
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .tooltipContainer:hover .tooltipText {
-    visibility: visible;
-    opacity: 1;
-  }
-  
+
   .deleteTaskBtn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 50%;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+      padding: 8px;
   }
-  
-  .deleteTaskBtn:hover {
-    background-color: rgba(255, 0, 0, 0.1);
-    transform: scale(1.1);
+}
+
+@media screen and (max-width: 480px) {
+  .taskItem {
+      padding: 8px;
   }
-  
+
+  .taskDetailsBtn {
+      font-size: 1.2rem;
+  }
+
+  .statusBtn {
+      padding: 6px;
+  }
+
+  .deleteTaskBtn {
+      padding: 6px;
+  }
+}

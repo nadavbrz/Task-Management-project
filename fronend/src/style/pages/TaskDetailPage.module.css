@@ -1,5 +1,5 @@
 .taskDetailContainer {
-  max-width: 100%;
+  max-width: 800px;
   margin: 40px auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -15,7 +15,7 @@
 }
 
 .title {
-  font-size: 28px;
+  font-size: 45px;
   color: blue;
   font-weight: bold;
   overflow: hidden; 
@@ -24,7 +24,7 @@
 
 
 .description {
-  font-size: 18px;
+  font-size: 28px;
   margin: 20px 0;
   word-break: break-word;
 }
@@ -35,7 +35,7 @@
 }
 
 .taskDetailsList li {
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 

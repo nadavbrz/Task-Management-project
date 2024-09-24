@@ -69,7 +69,7 @@ const FuturePage = () => {
             ))}
       </div>
       ):(
-        <h3>No future tasks found!</h3>
+        <h3 className={classes.notFound}>No future tasks found!</h3>
       )}
     </div>
   );

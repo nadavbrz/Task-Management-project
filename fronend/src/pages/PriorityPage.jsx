@@ -69,7 +69,7 @@ const PriorityPage = () => {
             ))}
       </div>
       ):(
-        <h3>No priority tasks found!</h3>
+        <h3 className={classes.notFound}>No priority tasks found!</h3>
       )}
     </div>
   );

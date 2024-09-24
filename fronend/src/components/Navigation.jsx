@@ -13,8 +13,7 @@ import {
 import { MdAdminPanelSettings } from "react-icons/md";
 
 const Navigation = () => {
-  const user = JSON.parse(localStorage.getItem("user")); // Parse the user object from localStorage
-
+  const user = JSON.parse(localStorage.getItem("user"));
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -85,21 +84,25 @@ const Navigation = () => {
             {!user && (
               <li className={classes.navItem}>
                 <Link className={classes.navLink} to={"/logIn"}>
-                  <FaCircleUser  size="25px" />
+                  <FaCircleUser size="25px" />
                 </Link>
               </li>
             )}
             {user && (
               <li className={classes.navItem}>
                 <Link className={classes.navLink} to={"/profile"}>
-                  <FaCircleUser  size="25px" />
+                  <FaCircleUser size="25px" />
                 </Link>
               </li>
             )}
             {user?.email === "nadav@gmail.com" && (
               <li className={classes.navItem}>
                 <Link className={classes.navLink} to={"/adminPanel"}>
-                {dimensions.width < 590 ? <MdAdminPanelSettings size="25px" /> : "Admin"}
+                  {dimensions.width < 590 ? (
+                    <MdAdminPanelSettings size="25px" />
+                  ) : (
+                    "Admin"
+                  )}
                 </Link>
               </li>
             )}
