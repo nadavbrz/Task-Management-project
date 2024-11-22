@@ -13,7 +13,7 @@ const Future = () => {
           <ul className={classes.list}>
             <li className={classes.listItem}>
               <FaRegCircleDot size="13px" />
-              Research New Project Management Tools
+              Research New Project Manager
             </li>
             <li className={classes.listItem}>
               <FaRegCircleDot size="13px" />

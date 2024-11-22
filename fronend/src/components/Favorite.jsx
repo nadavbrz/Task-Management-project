@@ -11,7 +11,7 @@ const Favorite = () => {
             Favorite tasks <FaHeart fill="#004953" />
           </h2>
           <ul className={classes.list}>
-            <li className={classes.listItem}><FaRegCircleDot size="13px" />Research New Project Management Tools</li>
+            <li className={classes.listItem}><FaRegCircleDot size="13px" />Research New Project Manager</li>
             <li className={classes.listItem}><FaRegCircleDot size="13px" />Plan Annual Budget Review</li>
             <li className={classes.listItem}><FaRegCircleDot size="13px" />Update Team Onboarding Manual</li>
           </ul>

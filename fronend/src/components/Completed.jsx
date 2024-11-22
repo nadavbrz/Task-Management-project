@@ -13,7 +13,7 @@ const Completed = () => {
           <ul className={classes.list}>
             <li className={classes.listItem}><FaRegCircleDot size="13px" />Complete Website Redesign
             </li>
-            <li className={classes.listItem}><FaRegCircleDot size="13px" />Submit Marketing Campaign Strategy
+            <li className={classes.listItem}><FaRegCircleDot size="13px" />find Marketing Campaign Strategy
             </li>
             <li className={classes.listItem}><FaRegCircleDot size="13px" />Resolve Customer Support Tickets
             </li>
