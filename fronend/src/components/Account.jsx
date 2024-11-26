@@ -13,7 +13,7 @@ const Account = () => {
           </h2>
           <ul>
             <li className={classes.listItem}>
-              <FaRegCircleDot size="13px" /> Manage your account information
+              <FaRegCircleDot size="13px" /> Manage your account 
             </li>
             <li className={classes.listItem}>
               <FaRegCircleDot size="13px" /> View your tasks history

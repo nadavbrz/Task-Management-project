@@ -11,11 +11,11 @@ const Completed = () => {
             Completed tasks <FaListCheck fill="#004953" />
           </h2>
           <ul className={classes.list}>
-            <li className={classes.listItem}><FaRegCircleDot size="13px" />Complete Website Redesign
+            <li className={classes.listItem}><FaRegCircleDot size="13px" />Finished reading a novel
             </li>
-            <li className={classes.listItem}><FaRegCircleDot size="13px" />find Marketing Campaign Strategy
+            <li className={classes.listItem}><FaRegCircleDot size="13px" />Completed gym session
             </li>
-            <li className={classes.listItem}><FaRegCircleDot size="13px" />Resolve Customer Support Tickets
+            <li className={classes.listItem}><FaRegCircleDot size="13px" />Organized kitchen pantry
             </li>
           </ul>
         </div>

@@ -21,7 +21,7 @@ const Future = () => {
             </li>
             <li className={classes.listItem}>
               <FaRegCircleDot size="13px" />
-              Update Team Onboarding Manual
+              Update Team Manual
             </li>
           </ul>
         </div>
